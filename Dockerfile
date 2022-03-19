@@ -21,5 +21,7 @@ RUN npm run build
 # 도커 내부에 3000포트를 노출 시킵니다.
 EXPOSE 3000
 
+VOLUME [ "/userData" ]
+
 # 컨테이너 실행시 'node dist/main'을 터미널로 실행합니다.
 CMD [ "node","dist/main" ]
