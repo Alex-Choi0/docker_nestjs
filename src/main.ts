@@ -13,7 +13,7 @@ async function bootstrap() {
 
   // Swagger Document의 문서를 api(/api-docs)로 설정할수 있게 셋팅
   const document = SwaggerModule.createDocument(app, options);
-  SwaggerModule.setup('api-docs', app, document); 
+  SwaggerModule.setup('api-docs', app, document);
   await app.listen(3000);
 }
 bootstrap();
